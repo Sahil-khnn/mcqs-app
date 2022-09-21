@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  list-style: none;
+}
+
+.main-div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 145, 0);
+}
+
+.main-div .inner-div {
+  background-color: #fff;
+  width: 550px;
+  padding: 25px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-div .inner-div .question {
+  font-size: 35px;
+  margin: 10px 15px 20px;
+}
+
+.main-div .inner-div ul {
+  margin-bottom: 15px;
+}
+
+.main-div .inner-div ul li {
+  font-size: 22px;
+  padding: 5px 10px;
+}
+
+.main-div .inner-div ul li input {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.main-div .inner-div #submit {
+  display: flex;
+  margin: 25px auto 0;
+  padding: 12px 35px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: rgb(255, 145, 0);
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.main-div .inner-div #submit.active {
+  display: none;
+}
+
+.main-div .inner-div #submit:hover {
+  background-color: rgb(230, 130, 0);
+  transform: scale(1.02);
+}
+
+.main-div .inner-div #showScore {
+  background-color: rgb(245, 190, 119);
+  height: 120px;
+  width: 70%;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 20px auto 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main-div .inner-div #showScore h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.main-div .inner-div #showScore .btn {
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 7px;
+  background-color: rgb(255, 145, 0);
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin-top: 10px;
+}
+
+.main-div .inner-div #showScore .btn:hover {
+  background-color: rgb(230, 130, 0);
+  transform: scale(1.02);
+}
+
+.scoreArea {
+  display: none;
+}
